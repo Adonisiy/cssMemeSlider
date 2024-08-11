@@ -48,4 +48,36 @@ body {
   display: flex;
   padding-top: 1rem;
   justify-self: end;
+  gap: 0.5rem;
+}
+
+.button,
+label {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.button-image {
+  width: 1rem;
+  height: 1rem;
+  border: solid 3px blue;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.button:hover > .button-image {
+  background-color: white;
+  border-color: white;
+}
+
+input {
+  display: none;
+}
+
+#radio1:checked + .button-image,
+#radio2:checked + .button-image,
+#radio3:checked + .button-image,
+#radio4:checked + .button-image,
+#radio5:checked + .button-image {
+  background-color: #3b3b3b;
 }
