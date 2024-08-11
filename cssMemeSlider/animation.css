@@ -1,0 +1,68 @@
+#radio1:checked ~ .buttons-container .button-image1,
+#radio2:checked ~ .buttons-container .button-image2,
+#radio3:checked ~ .buttons-container .button-image3,
+#radio4:checked ~ .buttons-container .button-image4,
+#radio5:checked ~ .buttons-container .button-image5 {
+  background-color: #3b3b3b;
+}
+
+#radio1:checked ~ .buttons-container label:nth-child(1) {
+  cursor: auto;
+  pointer-events: none;
+}
+
+#radio2:checked ~ .buttons-container label:nth-child(2) {
+  cursor: auto;
+  pointer-events: none;
+}
+
+#radio3:checked ~ .buttons-container label:nth-child(3) {
+  cursor: auto;
+  pointer-events: none;
+}
+
+#radio4:checked ~ .buttons-container label:nth-child(4) {
+  cursor: auto;
+  pointer-events: none;
+}
+
+#radio5:checked ~ .buttons-container label:nth-child(5) {
+  cursor: auto;
+  pointer-events: none;
+}
+
+#radio1:checked ~ .slides-container .slides-carousel {
+  left: 0%;
+}
+#radio2:checked ~ .slides-container .slides-carousel {
+  left: -100%;
+}
+#radio3:checked ~ .slides-container .slides-carousel {
+  left: -200%;
+}
+#radio4:checked ~ .slides-container .slides-carousel {
+  left: -300%;
+}
+#radio5:checked ~ .slides-container .slides-carousel {
+  left: -400%;
+}
+
+#radio1:checked ~ .labels-container .labels-carousel {
+  top: -400%;
+}
+
+#radio2:checked ~ .labels-container .labels-carousel {
+  top: -300%;
+}
+
+#radio3:checked ~ .labels-container .labels-carousel {
+  top: -200%;
+}
+
+#radio4:checked ~ .labels-container .labels-carousel {
+  top: -100%;
+}
+
+#radio5:checked ~ .labels-container .labels-carousel {
+  top: 0%;
+}

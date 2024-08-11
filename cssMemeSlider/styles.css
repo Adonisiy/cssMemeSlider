@@ -9,6 +9,7 @@ body {
   grid-template-columns: 1fr min-content;
   grid-template-rows: 1fr min-content;
   height: calc(100vh - 2rem);
+  column-gap: 1rem;
 }
 
 .slides-container {
@@ -64,7 +65,6 @@ body {
   gap: 0.5rem;
 }
 
-.button,
 label {
   padding: 1rem;
   cursor: pointer;
@@ -79,7 +79,7 @@ label {
   border-radius: 50%;
 }
 
-.button:hover > .button-image {
+label:hover > .button-image {
   background-color: white;
   border-color: white;
 }
@@ -88,46 +88,47 @@ input {
   display: none;
 }
 
-#radio1:checked ~ .buttons-container .button-image1,
-#radio2:checked ~ .buttons-container .button-image2,
-#radio3:checked ~ .buttons-container .button-image3,
-#radio4:checked ~ .buttons-container .button-image4,
-#radio5:checked ~ .buttons-container .button-image5 {
-  background-color: #3b3b3b;
+@media (max-width: 750px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content min-content;
+    height: auto;
+  }
+
+  .slides-container {
+    grid-area: 1 / 1;
+    aspect-ratio: 4.5 / 3;
+  }
+
+  .labels-container {
+    grid-area: 3 / 1;
+    padding: 0px;
+    height: 3.6875rem;
+  }
+
+  .label {
+    padding: 0px 1rem;
+  }
+
+  .buttons-container {
+    grid-area: 2 / 1;
+    justify-self: center;
+  }
 }
 
-#radio1:checked ~ .slides-container .slides-carousel {
-  left: 0%;
-}
-#radio2:checked ~ .slides-container .slides-carousel {
-  left: -100%;
-}
-#radio3:checked ~ .slides-container .slides-carousel {
-  left: -200%;
-}
-#radio4:checked ~ .slides-container .slides-carousel {
-  left: -300%;
-}
-#radio5:checked ~ .slides-container .slides-carousel {
-  left: -400%;
+@media (max-width: 500px) {
+  label {
+    padding: 0.75rem;
+  }
+
+  .button-image {
+    width: 1rem;
+    height: 1rem;
+  }
 }
 
-#radio1:checked ~ .labels-container .labels-carousel {
-  top: -400%;
-}
-
-#radio2:checked ~ .labels-container .labels-carousel {
-  top: -300%;
-}
-
-#radio3:checked ~ .labels-container .labels-carousel {
-  top: -200%;
-}
-
-#radio4:checked ~ .labels-container .labels-carousel {
-  top: -100%;
-}
-
-#radio5:checked ~ .labels-container .labels-carousel {
-  top: 0%;
+@media (max-width: 420px) {
+  .label {
+    font-size: 1.25rem;
+  }
 }
