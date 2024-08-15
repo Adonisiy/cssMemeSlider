@@ -1,8 +1,8 @@
-#radio1:checked ~ .buttons-container .button-image1,
-#radio2:checked ~ .buttons-container .button-image2,
-#radio3:checked ~ .buttons-container .button-image3,
-#radio4:checked ~ .buttons-container .button-image4,
-#radio5:checked ~ .buttons-container .button-image5 {
+#radio1:checked ~ .down-line .button-image1,
+#radio2:checked ~ .down-line .button-image2,
+#radio3:checked ~ .down-line .button-image3,
+#radio4:checked ~ .down-line .button-image4,
+#radio5:checked ~ .down-line .button-image5 {
   background-color: #3b3b3b;
 }
 
@@ -47,11 +47,11 @@
   margin-left: -400%;
 }
 
-#radio1:checked ~ .labels-container .label:nth-child(1),
-#radio2:checked ~ .labels-container .label:nth-child(2),
-#radio3:checked ~ .labels-container .label:nth-child(3),
-#radio4:checked ~ .labels-container .label:nth-child(4),
-#radio5:checked ~ .labels-container .label:nth-child(5)
+#radio1:checked ~ .down-line .label:nth-child(1),
+#radio2:checked ~ .down-line .label:nth-child(2),
+#radio3:checked ~ .down-line .label:nth-child(3),
+#radio4:checked ~ .down-line .label:nth-child(4),
+#radio5:checked ~ .down-line .label:nth-child(5)
 {
   opacity: 1;
 }
