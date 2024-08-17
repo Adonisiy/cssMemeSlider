@@ -88,7 +88,7 @@ label {
   box-sizing: border-box;
   width: 1.5rem;
   height: 1.5rem;
-  border: solid 3px blue;
+  border: solid 0.1875rem blue;
   background-color: blue;
   border-radius: 50%;
   transition: 0.3s;
@@ -112,11 +112,11 @@ input {
 
   .labels-container {
     grid-area: 3 / 1;
-    padding: 0px;
+    padding: 0;
   }
 
   .label {
-    padding: 0px 1rem;
+    padding: 0 1rem;
   }
 
   .buttons-container {
